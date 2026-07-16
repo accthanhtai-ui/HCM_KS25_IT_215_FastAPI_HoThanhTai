@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from database import Base,engine,get_db
 from schemas import EnrollmentCreate,EnrollmentResponse
-from crud import create_enrollment,get_student_courses
+from curd import create_enrollment,get_student_courses
 
 Base.metadata.create_all(bind=engine)
 
